@@ -40,6 +40,7 @@ section{
 
 }
 .link-tree{
+    box-shadow: 5px 14px 33px 0px rgba(0,0,0,0.75);
     animation: scale 1.2s infinite;
     font-family: Arial, Helvetica, sans-serif;
     transition: all ease-in-out 0.2s;
@@ -96,6 +97,6 @@ section{
     transform: scale(1);
   }
   50% {
-    transform: scale(1.007);
+    transform: scale(1.009);
   }
 }
