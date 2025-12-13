@@ -1,0 +1,101 @@
+
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: hsla(276, 91%, 79%, 1);
+
+    background: linear-gradient(180deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 82%);
+
+    background: -moz-linear-gradient(180deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 82%);
+
+    background: -webkit-linear-gradient(180deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 82%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 );
+}
+header{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img-div img{
+    border-radius: 50px;
+}
+section{
+    padding-top: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1fr,1fr,1fr,1fr);
+    text-align: center;
+    justify-content: center;
+}
+.img-item img{
+    max-width: 25px;
+    max-height: 25px;
+    text-align: center;
+
+}
+.link-tree{
+    animation: scale 1.2s infinite;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all ease-in-out 0.2s;
+    background-color: rgba(95, 86, 100, 0.377);
+    display: flex;
+    width: 320px;
+    padding: 10px;
+    padding-left: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.link-tree:hover{
+    transform: scale(1.02);
+    transition: all ease-in-out 0.2s;
+}
+.link-tree a{
+    text-decoration: none;
+    color: black;
+}
+.img-item{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+#insta{
+    background: #833ab4; /* Fallback color */
+    background: linear-gradient(
+        to right, 
+        #833ab4, /* Royal Purple */
+        #fd1d1d, /* Torch Red */
+        #fcb045  /* Yellow Orange */
+    );
+}
+#gmail{
+    background-color: #ff0000; 
+    background-image: linear-gradient(to right, #ff0000, #ffff00);
+}
+#whats{
+    background-image: linear-gradient(to bottom right, #075E54, #25D366);
+    background-color: #075E54;
+}
+
+.header-bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.007);
+  }
+}
