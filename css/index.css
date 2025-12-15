@@ -1,18 +1,19 @@
 
 body{
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background: hsla(276, 91%, 79%, 1);
-
-    background: linear-gradient(180deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 82%);
-
-    background: -moz-linear-gradient(180deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 82%);
-
-    background: -webkit-linear-gradient(180deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 82%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 );
+    background-image: url("/img/fundo.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.bg-blur {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.15);
+    z-index: -1;
 }
 header{
     display: grid;
@@ -20,8 +21,9 @@ header{
     grid-template-columns: 1fr;
     padding: 10px;
     font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .img-div img{
     border-radius: 50px;
 }
@@ -67,21 +69,25 @@ section{
     justify-content: flex-start;
 }
 #insta{
-    background: #833ab4; /* Fallback color */
-    background: linear-gradient(
-        to right, 
-        #833ab4, /* Royal Purple */
-        #fd1d1d, /* Torch Red */
-        #fcb045  /* Yellow Orange */
-    );
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.2), /* Sombra para profundidade */
+        0 0 10px rgba(255, 0, 100, 1), /* Brilho interno/soft glow (COR PRINCIPAL DO BOTÃO) */
+        0 0 20px rgba(255, 0, 100, 1); /* Brilho externo/mais suave */
+    background-color: rgba(255, 0, 100, 0.6);
 }
 #gmail{
-    background-color: #ff0000; 
-    background-image: linear-gradient(to right, #ff0000, #ffff00);
+    box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.2),
+    0 0 10px  rgba(255, 0, 0, 1),
+    0 0 20px rgb(255, 251, 1);
+    background-color: rgba(255, 157, 0, 0.6);
 }
 #whats{
-    background-image: linear-gradient(to bottom right, #075E54, #25D366);
-    background-color: #075E54;
+    box-shadow: 
+    0 4px 6px rgba(0,0,0,0.2),
+    0 0 10px rgb(15, 179, 0),
+    0 0 20px #075E54;
+    background-color: rgba(1, 171, 60, 0.6);
 }
 
 .header-bottom{
