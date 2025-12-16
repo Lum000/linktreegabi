@@ -8,7 +8,7 @@ body{
 .bg-blur {
     background-image: url("../img/fundo.jpeg");
     position: fixed;
-    min-height: 100vh
+    min-height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
