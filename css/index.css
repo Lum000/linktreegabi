@@ -1,6 +1,6 @@
 
 body{
-    height:100%
+    height:100%;
     margin: 0;
     padding: 0;
     background-position: center;
@@ -9,10 +9,11 @@ body{
 .bg-blur {
     background-image: url("../img/fundo.jpeg");
     position: fixed;
+    min-height: 100vh;
     inset: 0;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    background: rgba(255, 255, 255, 0.15);
+    background-color:rgba(255, 255, 255, 0.15);
     z-index: -1;
 }
 header{
