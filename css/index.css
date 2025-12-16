@@ -1,6 +1,7 @@
 
 body{
     height:100%
+    background-image: url("./img/fundo.jpeg");
     margin: 0;
     padding: 0;
     background-position: center;
