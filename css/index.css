@@ -6,7 +6,7 @@ body{
     
 }
 .bg-blur {
-    background-image: url("../img/fundo.jpeg");
+    background-image: url("../img/Fundo.png");
     position: fixed;
     min-height: 100vh;
     background-position: center;
@@ -30,6 +30,7 @@ header span{
 }
 
 .img-div img{
+    padding: 10px;
     border-radius: 50px;
 }
 section{
